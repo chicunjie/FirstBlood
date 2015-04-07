@@ -28,7 +28,8 @@ bool ShouSi::init() {
 
 void ShouSi::initWithIndex(int index) {
     this->index = index;
-    Sprite *node = Sprite::create(NAME_SHOUSI[index]);
+    SpriteFrameCache *pFrameCache = SpriteFrameCache::getInstance();
+    Sprite *node = Sprite::createWithSpriteFrame(pFrameCache->getSpriteFrameByName(NAME_SHOUSI[index]));
     this->addChild(node);
 }
 
