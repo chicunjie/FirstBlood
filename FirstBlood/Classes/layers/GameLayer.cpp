@@ -9,6 +9,7 @@
 #include "GameLayer.h"
 #include "../node/ShouSi.h"
 #include "../utils/Const.h"
+#include "../utils/ResourceConst.h"
 
 
 GameLayer::GameLayer()
@@ -23,6 +24,11 @@ bool GameLayer::init() {
     if (!Layer::init()) {
         return false;
     }
+    Size winSize = Director::getInstance()->getWinSize();
+    Sprite *backGround = Sprite::create(png_background);
+    backGround->setPosition(Point(winSize.width/2, winSize.height/2));
+    this->addChild(backGround);
+    
     randomLayout();
     
     return true;
