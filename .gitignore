@@ -1,1 +1,7 @@
 # 列举不需要的文件
+# 游戏引擎的源代码, 不会修改
+cocos2d/
+# 私有数据文件
+FirstBlood/cocos2d/build/cocos2d_libs.xcodeproj/xcuserdata/
+FirstBlood/proj.ios_mac/FirstBlood.xcodeproj/project.xcworkspace/
+FirstBlood/proj.ios_mac/FirstBlood.xcodeproj/xcuserdata/
