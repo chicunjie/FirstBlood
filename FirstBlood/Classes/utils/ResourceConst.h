@@ -13,9 +13,10 @@
 // 资源别名: 便于记忆
 
 // 寿司
-const char *plist_shousi = "shousi.plist";
-const char *png_shousi = "shousi.png";
+static const char *plist_shousi = "shousi.plist";
+static const char *png_shousi = "shousi.png";
 
-// 其他
+// 背景图
+static const char *png_background = "background.png";
 
 #endif
